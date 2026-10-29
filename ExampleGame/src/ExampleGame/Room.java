@@ -8,12 +8,22 @@ public class Room implements Serializable {
 	private Room[] rooms;
 	private String roomName;
 	private HashMap<String, Item> roomItems;
+	private boolean locked;
 	
-	public Room(String n) {
+	public Room(String n, boolean l) {
 		roomName = n;
 		rooms = new Room[6];
 		roomItems = new HashMap<>();
 		runExampleGame.Rooms.add(this);
+		locked = l;
+	}
+	
+	public boolean getLocked() {
+		return locked;
+	}
+	
+	public void setLocked(boolean l) {
+		locked = l;
 	}
 	
 	public String getRoomName() {

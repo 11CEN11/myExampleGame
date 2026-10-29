@@ -1,45 +1,45 @@
 Living Room
-The small living room contains a couch, coffee table, and two
-armchairs. Pictures of various cousins adorn the walls along
-with two of your aunt's wretched attempts at oil painting. You
-can't help but notice that the carpet could use a good
-vacuuming.
-Doorways lead west to your father's office, north to your
-bedroom, and east to the kitchen.
+The small living room contains a couch, coffee table, and two 
+armchairs. Pictures of various cousins adorn the walls along 
+with two of your aunt's wretched attempts at oil painting. You 
+can't help but notice that the carpet could use a good 
+vacuuming. 
+Doorways lead west to your father's office, north to your 
+bedroom, and east to the kitchen. 
 #
 Office
 This is your father's small but productive workspace with his desktop PC and bookcases 
-surrounding the desk in the corner.
-A mountain of paperwork occupies the right most side of the desk each with things needed to be
-filled out for his company.
-The LED screen displays a email inbox numbering 20+ unread messages.
-You can return east to the living room.
+surrounding the desk in the corner. 
+A mountain of paperwork occupies the right most side of the desk each with things needed to be 
+filled out for his company. 
+The LED screen displays a email inbox numbering 20+ unread messages. 
+You can return east to the living room. 
 #
 Kitchen
-The large kitchen remains alight with two dimmed overhead lights over is center island.
-One sink sits on the island with a large number of dishes remaining unwashed inside.
-Another sink lays on the counter near the wall and the faint sound of a loose droplet hits the
-bottom of the silver bowl every few seconds. A dishwasher and oven/stove lay on either
-side of the wall sink. An ominous aura looms over the area of the kitchen.
-You can return west to the living room or you can travel south to the garage.
+The large kitchen remains alight with two dimmed overhead lights over is center island. 
+One sink sits on the island with a large number of dishes remaining unwashed inside. 
+Another sink lays on the counter near the wall and the faint sound of a loose droplet hits the 
+bottom of the silver bowl every few seconds. A dishwasher and oven/stove lay on either 
+side of the wall sink. An ominous aura looms over the area of the kitchen. 
+You can return west to the living room or you can travel south to the garage. 
 #
 Bedroom
-This is your domain and has been since your family moved here
-when you were six. A nightstand with a Superman lamp sits next
-to your twin bed. Posters of various anime characters cover one
-wall. A pile of laundry, slowly but surely attaining sentience,
-occupies the far corner.
-The door to the attic is in the ceiling above the pile of
-clothes. You can return south to the living room.
+This is your domain and has been since your family moved here 
+when you were six. A nightstand with a Superman lamp sits next 
+to your twin bed. Posters of various anime characters cover one 
+wall. A pile of laundry, slowly but surely attaining sentience, 
+occupies the far corner. 
+The door to the attic is in the ceiling above the pile of 
+clothes. You can return south to the living room. 
 #
 Attic
-The dark but large attic houses old decorations, hand-me-down clothes bins, and family picture
-books that feature you when you we younger. A single hanging light centered in the room
-makes the surroundings barely visible. The temperature becomes extreme up here depending on the season
-so you always feel uncomfortable here. You can return down to the bedroom.
+The dark but large attic houses old decorations, hand-me-down clothes bins, and family picture 
+books that feature you when you we younger. A single hanging light centered in the room 
+makes the surroundings barely visible. The temperature becomes extreme up here depending on the season 
+so you always feel uncomfortable here. You can return down to the bedroom. 
 #
 Garage
-The garage features to large garage doors on the farthest side from the door you came in from.
-Furniture such as large metal tool cabinets, a large wood and metal workbench, and numerous construction
-appliances. You can return north to the kicthen.  
+The garage features to large garage doors on the farthest side from the door you came in from. 
+Furniture such as large metal tool cabinets, a large wood and metal workbench, and numerous construction 
+appliances. You can return north to the kicthen. 
 #

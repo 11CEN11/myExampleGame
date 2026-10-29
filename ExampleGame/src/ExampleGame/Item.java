@@ -31,4 +31,8 @@ public class Item implements Serializable {
 		return isHeavy;
 	}
 	
+	public void use() {
+		runExampleGame.print("You cannot use this item here.");
+	}
+	
 }

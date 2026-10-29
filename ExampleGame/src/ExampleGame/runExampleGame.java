@@ -71,7 +71,6 @@ public class runExampleGame {
 	    }
 	}
 	
-
 	public static boolean processCommand(String command) {
 	    command = command.trim().toLowerCase();
 	
@@ -125,7 +124,18 @@ public class runExampleGame {
 	        case "exit":
 	            print("Farewell! Thanks for playing!");
 	            return false;
-	
+	            
+	        case "use":
+	        	if (parts.length < 2) {
+	        		print("Use what?");
+	        		break;
+	        	}
+	        	for (Item i : pInventory) {
+	        		if (i.getName().equals(parts[1])) {
+	        			i.use();
+	        			break;
+	        		}
+	        	}
 	        default:
 	            print("Unknown command. Try go north, take key, i, or exit.");
 	            break;
@@ -136,7 +146,6 @@ public class runExampleGame {
 	    return true;
 	}
 	
-		
 	public static void move(String d) {
 		int direction = 0;
 		switch(d.toLowerCase()) {
@@ -144,6 +153,9 @@ public class runExampleGame {
 			direction = 0;
 			if (currentRoom.getExit(direction) == null) {
 				print("You cannot go that way.");
+			}
+			else if (currentRoom.getExit(direction).getLocked() == true) {
+				print("This room is locked. You have to find an item to get in!");
 			}
 			else {
 				currentRoom = currentRoom.getExit(direction);
@@ -154,6 +166,9 @@ public class runExampleGame {
 			if (currentRoom.getExit(direction) == null) {
 				print("You cannot go that way.");
 			}
+			else if (currentRoom.getExit(direction).getLocked() == true) {
+				print("This room is locked. You have to find an item to get in!");
+			}
 			else {
 				currentRoom = currentRoom.getExit(direction);
 			}
@@ -162,6 +177,9 @@ public class runExampleGame {
 			direction = 2;
 			if (currentRoom.getExit(direction) == null) {
 				print("You cannot go that way.");
+			}	
+			else if (currentRoom.getExit(direction).getLocked() == true) {
+				print("This room is locked. You have to find an item to get in!");
 			}
 			else {
 				currentRoom = currentRoom.getExit(direction);
@@ -172,6 +190,9 @@ public class runExampleGame {
 			if (currentRoom.getExit(direction) == null) {
 				print("You cannot go that way.");
 			}
+			else if (currentRoom.getExit(direction).getLocked() == true) {
+				print("This room is locked. You have to find an item to get in!");
+			}
 			else {
 				currentRoom = currentRoom.getExit(direction);
 			}
@@ -181,6 +202,9 @@ public class runExampleGame {
 			if (currentRoom.getExit(direction) == null) {
 				print("You cannot go that way.");
 			}
+			else if (currentRoom.getExit(direction).getLocked() == true) {
+				print("This room is locked. You have to find an item to get in!");
+			}
 			else {
 				currentRoom = currentRoom.getExit(direction);
 			}
@@ -189,6 +213,9 @@ public class runExampleGame {
 			direction = 5;
 			if (currentRoom.getExit(direction) == null) {
 				print("You cannot go that way.");
+			}
+			else if (currentRoom.getExit(direction).getLocked() == true) {
+				print("This room is locked. You have to find an item to get in!");
 			}
 			else {
 				currentRoom = currentRoom.getExit(direction);
@@ -202,7 +229,7 @@ public class runExampleGame {
 	
 	public static void takeItem(String n) {
 		Item i = currentRoom.getRoomItem(n);
-		if ((i != null && i.getName().equals(n)) && i.getheavy() == true) {
+		if ((i != null && i.getName().equals(n)) && i.getheavy() == false) {
 			pInventory.add(currentRoom.getRoomItem(n));
 			print("You take the "+currentRoom.getRoomItem(n).getName()+" and carry it with you!");
 			currentRoom.setRoomItem(n, null);
@@ -279,8 +306,7 @@ public class runExampleGame {
 		}
 		
 	}
-	
-	
+
 	public static void main(String[] args) {
 	    loadDesHash();
 

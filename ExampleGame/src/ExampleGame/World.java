@@ -3,19 +3,18 @@ package ExampleGame;
 public class World {
 	
 	public static Room buildWorld() {
-		Room livingRoom = new Room("Living Room");
-		Room office = new Room("Office");
-		Room kitchen = new Room("Kitchen");
-		Room bedroom = new Room("Bedroom");
-		Room attic = new Room("Attic");
-		Room garage = new Room("Garage");
-		Item officekey = new Item("officeKey", true);
-		Item tool = new Item("tool", true);
+		Room livingRoom = new Room("Living Room", false);
+		Room office = new Room("Office", true);
+		Room kitchen = new Room("Kitchen", false);
+		Room bedroom = new Room("Bedroom", false);
+		Room attic = new Room("Attic", true);
+		Room garage = new Room("Garage", true);
+		Item officekey = new OfficeKey();
+		Item tool = new Tool();
 		Item musicbox = new Item("musicBox", false);
 		Item flashlight = new Item("flashlight", true);
 		Item knife = new Item("knife", true);
 		Item mysteriousorb = new Item("mysteriousOrb", true);
-		
 		
 		bedroom.addExit(attic, 4); //4 = up
 		bedroom.addExit(livingRoom, 3); //3 = south
