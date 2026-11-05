@@ -15,10 +15,11 @@ public class World {
 		Item flashlight = new Item("flashlight", true);
 		Item knife = new Item("knife", true);
 		Item mysteriousorb = new Item("mysteriousOrb", true);
+		Item safe = new Safe();
 		
 		bedroom.addExit(attic, 4); //4 = up
 		bedroom.addExit(livingRoom, 3); //3 = south
-		bedroom.setRoomItem("officekey", officekey);
+		bedroom.setRoomItem("office key", officekey);
 
 		livingRoom.addExit(bedroom, 2); //2 = north
 		livingRoom.addExit(office, 1); //1 = west

@@ -5,7 +5,7 @@ public class OfficeKey extends Item {
 	private boolean usedTool;
 	
 	public OfficeKey() {
-		super("officekey", false);
+		super("office key", false);
 		usedTool = false;
 	}
 	@Override

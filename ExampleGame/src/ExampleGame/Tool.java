@@ -17,7 +17,7 @@ public class Tool extends Item{
 			} else {
 				runExampleGame.getCurrentRoom().getExit(4).setLocked(false);
 				usedTool = true;
-				runExampleGame.print("Using the tool, you are able to…");
+				runExampleGame.print("Using the tool, you are able to open the Attic Door!");
 			} 
 		}else {
 			runExampleGame.print("You don't see any way to use the tool…");

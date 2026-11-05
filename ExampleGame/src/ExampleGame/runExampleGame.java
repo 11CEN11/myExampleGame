@@ -136,6 +136,17 @@ public class runExampleGame {
 	        			break;
 	        		}
 	        	}
+	        case "open":
+	        	if (parts.length<2) {
+	        		print("Open what?");
+	        		break;
+	        	}
+	        	else {
+	        		if (parts[2] == "safe" && getCurrentRoom().getRoomName() == "attic") {
+	        			getCurrentRoom().getRoomItem('safe').open()
+	        		}
+	        	}
+	        	
 	        default:
 	            print("Unknown command. Try go north, take key, i, or exit.");
 	            break;
@@ -307,6 +318,11 @@ public class runExampleGame {
 		
 	}
 
+	public static void addInventoryItem(Item o) {
+		pInventory.add(o);
+	}
+	
+	
 	public static void main(String[] args) {
 	    loadDesHash();
 
