@@ -16,6 +16,7 @@ public class World {
 		Item knife = new Item("knife", true);
 		Item mysteriousorb = new Item("mysteriousOrb", true);
 		Item safe = new Safe();
+		NPC jotaro = new Jotaro();
 		
 		bedroom.addExit(attic, 4); //4 = up
 		bedroom.addExit(livingRoom, 3); //3 = south
@@ -26,6 +27,7 @@ public class World {
 		livingRoom.addExit(kitchen, 0); //0 = east
 		livingRoom.setRoomItem("tool", tool);
 		livingRoom.setRoomItem("musicbox", musicbox);
+		livingRoom.setRoomNPC("jotaro", jotaro);
 		
 		attic.addExit(bedroom, 5); //5 = down
 		

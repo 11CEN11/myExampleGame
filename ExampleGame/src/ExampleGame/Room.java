@@ -8,12 +8,14 @@ public class Room implements Serializable {
 	private Room[] rooms;
 	private String roomName;
 	private HashMap<String, Item> roomItems;
+	private HashMap<String, NPC> roomNPCs;
 	private boolean locked;
 	
 	public Room(String n, boolean l) {
 		roomName = n;
 		rooms = new Room[6];
 		roomItems = new HashMap<>();
+		roomNPCs = new HashMap<>();
 		runExampleGame.Rooms.add(this);
 		locked = l;
 	}
@@ -60,6 +62,25 @@ public class Room implements Serializable {
 	
 	public void removeItem(String n) {
 		roomItems.remove(n);
+	}
+	
+	public HashMap<String, Item> getItems(){
+		return roomItems;
+	}
+	
+	public HashMap<String, NPC> getNPCs(){
+		return roomNPCs;
+	}
+	
+	public NPC getRoomNPC(String n) {
+		return roomNPCs.get(n);
+	}
+	
+	public void setRoomNPC(String n, NPC l) {
+		roomNPCs.put(n, l);
+	}
+	public void removeRoomNPC(String n) {
+		roomNPCs.remove(n);
 	}
 	
 	public String toString() {

@@ -142,11 +142,33 @@ public class runExampleGame {
 	        		break;
 	        	}
 	        	else {
-	        		if (parts[2] == "safe" && getCurrentRoom().getRoomName() == "attic") {
-	        			getCurrentRoom().getRoomItem('safe').open()
+	        		if (parts[1] == "safe" && getCurrentRoom().getRoomName() == "attic") {
+	        			getCurrentRoom().getRoomItem("safe").open();
 	        		}
+	        		break;
 	        	}
-	        	
+	        case "close":
+	        	if (parts.length<2) {
+	        		print("Close what?");
+	        	}
+	        	else {
+	        		if (parts[1] == "safe" && getCurrentRoom().getRoomName() == "attic") {
+	        			getCurrentRoom().getRoomItem("safe").close();
+	        		}
+	        		break;
+	        	}
+	        case "talk":
+	        	if(parts.length<2) {
+	        		print("Talk to who?");
+	        		break;
+	        	}
+	        	else {
+	        		if (getCurrentRoom().getNPCs().containsKey(parts[1])) {
+	        			getCurrentRoom().getRoomNPC(parts[1]).talk();
+	        		}
+	        		break;
+	        	}
+	        
 	        default:
 	            print("Unknown command. Try go north, take key, i, or exit.");
 	            break;
